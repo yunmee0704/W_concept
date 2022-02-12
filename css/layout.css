@@ -1,0 +1,83 @@
+@import url(./common.css);
+@import url(./reset.css);
+
+
+header {
+    width: 100%;
+    background-color: #fff;
+}
+
+header .icon_area {
+    height: 50px;
+    position: relative;
+}
+
+header .icon_area .menu_logo {
+    overflow: hidden;
+}
+
+header .icon_area .menu_logo .menu {
+    float: left;
+    margin-left: 10px;
+}
+
+header .icon_area .menu_logo .menu a {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .icon_area .menu_logo .menu a img,
+header .icon_area .menu_logo .icon a img {
+
+    height: 100%;
+    display: block;
+}
+
+header .icon_area .menu_logo .icon {
+    float: right;
+    margin-right: 10px;
+}
+
+header .icon_area .menu_logo .icon a {
+    float: left;
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .gnb {
+    height: 39px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    
+}
+
+header .gnb .swiper.nav {
+    text-align: center;
+    
+    vertical-align: top;
+    
+}
+
+header .gnb .swiper.nav .swiper-wrapper {
+
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+header .gnb .swiper.nav .swiper-wrapper .swiper-slide {
+    float: left;
+    margin-right: 50px;
+
+}
+
+header .gnb .swiper.nav .swiper-wrapper .swiper-slide:last-child {
+    margin-right: 0;
+}
+
+header .gnb .swiper.nav .swiper-wrapper .swiper-slide a {display: block;}

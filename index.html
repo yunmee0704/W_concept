@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>W-concept</title>
 </head>
 
@@ -13,13 +15,13 @@
         <div class="icon_area">
             <div class="menu_logo">
                 <div class="menu">
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><span class="blind">logo <img src="" alt=""></span></a>
+                    <a href=""><span class="blind">category</span><img src="./img/btn_gnb_menu_50.png" alt=""></a>
+                    <a href=""><span class="blind">logo</span><img src="./img/btn_gnb_logo_50.png" alt=""></a>
                 </div>
 
                 <div class="icon">
-                    <a href=""><span class="blind">검색<img src="" alt=""></span></a>
-                    <a href=""><span class="blind">장바구니<img src="" alt=""></span></a>
+                    <a href=""><span class="blind">검색</span><img src="./img/btn_gnb_search_50.png" alt=""></a>
+                    <a href=""><span class="blind">장바구니</span><img src="./img/ico_gnb_bag_50.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -40,22 +42,29 @@
 
     <main>
         <section class="sc_visual">
+            <div class="coupon_box">
+                
+                 <a href="">
+                     <img src="./img/M_마케팅_메인상단띠배너_750x88_20220113190602.jpg" alt="" class="top_banner">
+                 </a>
+          </div>
+          <div class="main_banner">
             <h2 class="blind">런칭&이벤트 배너</h2>
             <div class="pages">
                 <span class="now">1</span>
                 <span class="slash">/</span>
                 <span class="total">30</span>
             </div>
-
+         
             <div class="swiper slide01">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="">
                             <div class="cont_wrap">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="./img/w01_600x1040_20220211103213.jpg" alt="">
                                 </div>
-                                <div class="txt_wrap">
+                                <div class="text_wrap">
                                     <span>20% 세일</span>
                                     <strong>TOP 20 ITEMS</strong>
                                     <p>지금 가장 핫한 아이템 할인받기!</p>
@@ -67,13 +76,15 @@
 
                 </div>
             </div>
+          </div>
+   
             <article class="sale">
                 <div class="inner">
                     <div class="cont_wrap">
-                        <div class="left">
+                        <div class="contents left">
                             <a href="">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="./img/위캔드오프 mo_20220210143043.jpg" alt="">
                                 </div>
                                 <div class="text_wrap">
                                     <strong>WEEKEND OFF</strong>
@@ -82,17 +93,17 @@
                             </a>
     
                         </div>
-                        <div class="right">
+                        <div class="contents right">
                             <a href="">
-                                <div class="img_wrap">
-                                    <img src="" alt="">
-                                </div>
+                                <div class="img_wrap"></div>
+                                <img src="./img/위캔드오프 mo_20220210143043.jpg" alt="">
+                               
                                 <div class="text_wrap">
                                     <strong>WEEKEND OFF</strong>
                                     <p>주말 한정 특가 모아보기</p>
                                 </div>
                             </a>
-    
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -101,17 +112,18 @@
         </section>
 
         <section class="new_arrival">
-            <h2>PRE OPEN</h2>
+            <div class="inner">
+                <h2>PRE OPEN</h2>
             <div class="swiper slide02">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="">
                             <div class="cont_wrap">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
                                 </div>
-                                <div class="txt_wrap">
-                                    <span>20% 세일</span>
+                                <div class="text_wrap">
+                                    
                                     <strong>TOP 20 ITEMS</strong>
                                     <p>지금 가장 핫한 아이템 할인받기!</p>
                                 </div>
@@ -119,6 +131,22 @@
                         </a>
 
                     </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="cont_wrap">
+                                <div class="img_wrap">
+                                    <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
+                                </div>
+                                <div class="text_wrap">
+                                    
+                                    <strong>TOP 20 ITEMS</strong>
+                                    <p>지금 가장 핫한 아이템 할인받기!</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    
                 </div>
             </div>
             <article class="new">
@@ -143,6 +171,8 @@
                     </div>
                 </div>
             </article>
+            </div>
+            
         </section>
         <section class="md_pick">
             <div class="inner">
@@ -221,10 +251,10 @@
       <div class="float_menu">
           <div class="cont_wrap">
               <ul class="icon">
-                  <li><a href=""><span class="blind">home<i></i></span></a></li>
-                  <li><a href=""><span class="blind">home<i></i></span></a></li>
-                  <li><a href=""><span class="blind">home<i></i></span></a></li>
-                  <li><a href=""><span class="blind">home<i></i></span></a></li>
+                  <li><a href=""><span class="blind">home</span><i></i></a></li>
+                  <li><a href=""><span class="blind">home</span><i></i></a></li>
+                  <li><a href=""><span class="blind">home</span><i></i></a></li>
+                  <li><a href=""><span class="blind">home</span><i></i></a></li>
               </ul>
               <div class="btn_men">
                   <a href=""><img src="" alt=""></a>
