@@ -3,8 +3,10 @@
 
 
 header {
+    /* position: fixed; */
     width: 100%;
     background-color: #fff;
+    z-index: 9;
 }
 
 header .icon_area {
@@ -48,36 +50,110 @@ header .icon_area .menu_logo .icon a {
     margin-right: 10px;
 }
 
-header .gnb {
-    height: 39px;
+nav {
+    
+    width: 100%;
+    overflow: hidden;
+    height: 48px;
     padding-top: 10px;
     box-sizing: border-box;
-    
-}
-
-header .gnb .swiper.nav {
     text-align: center;
-    
     vertical-align: top;
     
 }
-
-header .gnb .swiper.nav .swiper-wrapper {
-
-    display: inline-block;
-    padding: 0 16px;
-    font-size: 13px;
+nav .gnb{
+       
+    font-size: 11px;
     font-weight: bold;
+    
+}
+nav .gnb .swiper-wrapper{
+    width: 90%;
+    
 }
 
-header .gnb .swiper.nav .swiper-wrapper .swiper-slide {
-    float: left;
-    margin-right: 50px;
+nav .gnb .swiper-wrapper .swiper-slide {
+  display: block;
+  text-align: center;
+       
+}
+
+nav .gnb .swiper-wrapper .swiper-slide a:hover {
+text-decoration: underline;
+       
+}
+
+nav .gnb .swiper-wrapper .swiper-slide a {
+    display: inline-block;
+    height: 100%;
+    line-height: 3;
+   
+   
+}
+
+footer{background-color: #f1f1f1; padding-bottom: 50px;}
+footer .menu{    background: #aaa;text-align: center;}
+footer .menu .wrap{display: inline-block; height: 32.5px;}
+footer .menu .wrap a{    
+   display: inline-block;
+    color: #fff;
+height: 100%;
+line-height: 3;
+margin-left: 15px;
+font-size: 11.375px;
+font-weight: bold;}
+footer .menu .wrap a::after
+{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: #fff;
+    vertical-align: middle;
+    margin-left:15px;
+}
+footer .menu .wrap a:last-child::after,
+footer .inner .policy a:last-child:after{
+   width: 0;
+   
+   height: 0;
 
 }
 
-header .gnb .swiper.nav .swiper-wrapper .swiper-slide:last-child {
-    margin-right: 0;
+footer .inner{
+    padding: 16px 10px 27px 10px;
+    font-size: 10px;
 }
 
-header .gnb .swiper.nav .swiper-wrapper .swiper-slide a {display: block;}
+footer .inner p{
+    line-height: 1.5;
+    color: #777;
+    font-size: 10px;
+}
+footer .inner p a{
+  display: inline-block;
+  height: 100%;
+}
+
+footer .inner .policy{
+    margin: 20px 0;
+}
+footer .inner .policy a{
+    display: inline-block;;
+    color: #333;
+height: 100%;
+line-height: 3;
+margin-left: 10px;
+font-size: 10px;
+
+}
+
+footer .inner .policy a::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #333;
+    vertical-align: middle;
+    margin-left:10px;
+}

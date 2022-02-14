@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="./jquery-1.12.4.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
     <title>W-concept</title>
 </head>
 
@@ -15,7 +21,10 @@
         <div class="icon_area">
             <div class="menu_logo">
                 <div class="menu">
-                    <a href=""><span class="blind">category</span><img src="./img/btn_gnb_menu_50.png" alt=""></a>
+                    <a href="#" class="hidden_menu">
+                        <span class="blind">category</span>
+                        <img src="./img/btn_gnb_menu_50.png" alt="">
+                    </a>
                     <a href=""><span class="blind">logo</span><img src="./img/btn_gnb_logo_50.png" alt=""></a>
                 </div>
 
@@ -26,58 +35,363 @@
             </div>
         </div>
         <nav>
-            <div class="gnb">
-                <div class="swiper nav">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                        <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                        <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                        <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                        <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                        <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                        <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                    </div>
+            <div class="swiper gnb">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
+                    <div class="swiper-slide"><a href="">BEST</a></div>
+                    <div class="swiper-slide"><a href="">SALE</a></div>
+                    <div class="swiper-slide"><a href="">APPAREL</a></div>
+                    <div class="swiper-slide"><a href="">BAG</a></div>
+                    <div class="swiper-slide"><a href="">SHOSE</a></div>
+                    <div class="swiper-slide"><a href="">ORIGINAL</a></div>
+
+
+                    </ul>
+                </div>
         </nav>
     </header>
 
     <main>
-        <section class="sc_visual">
-            <div class="coupon_box">
-                
-                 <a href="">
-                     <img src="./img/M_마케팅_메인상단띠배너_750x88_20220113190602.jpg" alt="" class="top_banner">
-                 </a>
-          </div>
-          <div class="main_banner">
-            <h2 class="blind">런칭&이벤트 배너</h2>
-            <div class="pages">
-                <span class="now">1</span>
-                <span class="slash">/</span>
-                <span class="total">30</span>
+        <section class="menubar">
+            <div class="header">
+                <div class="menu">
+                    <p>WOMEN</p>
+                    <p>MEN</p>
+                </div>
+                <div class="btn_close">
+                    <img src="./img/btn_close.png" alt="">
+                </div>
+
             </div>
-         
-            <div class="swiper slide01">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="">
+            <div class="cate1">
+                <ul class="sub">
+                    <li><a href="">NEW</a></li>
+                    <li><a href="">BEST</a></li>
+                    <li><a href="">APPAREL</a><img src="./img/btn_page_top_white.png" alt="">
+                        <ul class="detail">
+                            <li><a href="">아우터</a></li>
+                            <li><a href="">블라우스/셔츠</a></li>
+                            <li><a href="">니트웨어</a></li>
+                            <li><a href="">팬츠</a></li>
+                            <li><a href="">키즈</a></li>
+                            <li><a href="">원피스</a></li>
+                            <li><a href="">티셔츠</a></li>
+                            <li><a href="">스커트</a></li>
+                            <li><a href="">데님</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">BAG</a><img src="./img/btn_page_top_white.png" alt="">
+                        <ul class="detail">
+                            <li><a href="">아우터</a></li>
+                            <li><a href="">블라우스/셔츠</a></li>
+                            <li><a href="">니트웨어</a></li>
+                            <li><a href="">팬츠</a></li>
+                            <li><a href="">키즈</a></li>
+                            <li><a href="">원피스</a></li>
+                            <li><a href="">티셔츠</a></li>
+                            <li><a href="">스커트</a></li>
+                            <li><a href="">데님</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">SH0OES</a><img src="./img/btn_page_top_white.png" alt="">
+                        <ul class="detail">
+                            <li><a href="">아우터</a></li>
+                            <li><a href="">블라우스/셔츠</a></li>
+                            <li><a href="">니트웨어</a></li>
+                            <li><a href="">팬츠</a></li>
+                            <li><a href="">키즈</a></li>
+                            <li><a href="">원피스</a></li>
+                            <li><a href="">티셔츠</a></li>
+                            <li><a href="">스커트</a></li>
+                            <li><a href="">데님</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">ACC</a><img src="./img/btn_page_top_white.png" alt="">
+                        <ul class="detail">
+                            <li><a href="">아우터</a></li>
+                            <li><a href="">블라우스/셔츠</a></li>
+                            <li><a href="">니트웨어</a></li>
+                            <li><a href="">팬츠</a></li>
+                            <li><a href="">키즈</a></li>
+                            <li><a href="">원피스</a></li>
+                            <li><a href="">티셔츠</a></li>
+                            <li><a href="">스커트</a></li>
+                            <li><a href="">데님</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">BEUTY&</a><img src="./img/btn_page_top_white.png" alt="">
+                        <ul class="detail">
+                            <li><a href="">아우터</a></li>
+                            <li><a href="">블라우스/셔츠</a></li>
+                            <li><a href="">니트웨어</a></li>
+                            <li><a href="">팬츠</a></li>
+                            <li><a href="">키즈</a></li>
+                            <li><a href="">원피스</a></li>
+                            <li><a href="">티셔츠</a></li>
+                            <li><a href="">스커트</a></li>
+                            <li><a href="">데님</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">LIFEWEAR</a><img src="./img/btn_page_top_white.png" alt="">
+                        <ul class="detail">
+                            <li><a href="">아우터</a></li>
+                            <li><a href="">블라우스/셔츠</a></li>
+                            <li><a href="">니트웨어</a></li>
+                            <li><a href="">팬츠</a></li>
+                            <li><a href="">키즈</a></li>
+                            <li><a href="">원피스</a></li>
+                            <li><a href="">티셔츠</a></li>
+                            <li><a href="">스커트</a></li>
+                            <li><a href="">데님</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">LIFE</a><img src="./img/btn_page_top_white.png" alt="">
+                        <ul class="detail">
+                            <li><a href="">아우터</a></li>
+                            <li><a href="">블라우스/셔츠</a></li>
+                            <li><a href="">니트웨어</a></li>
+                            <li><a href="">팬츠</a></li>
+                            <li><a href="">키즈</a></li>
+                            <li><a href="">원피스</a></li>
+                            <li><a href="">티셔츠</a></li>
+                            <li><a href="">스커트</a></li>
+                            <li><a href="">데님</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="cate2">
+                <div><a href="">
+                        <div class="text_wrap">
+                            <p>CHICOR</p>
+                            <span>2022년 럭셔리 뷰티 브랜드</span>
+                        </div>
+                    </a></div>
+                <div><a href="">
+                        <div class="text_wrap">
+                            <p>CHICOR</p>
+                            <span>2022년 럭셔리 뷰티 브랜드</span>
+                        </div>
+                    </a></div>
+            </div>
+            <div class="showroom">
+                <h2>SHOWROOM</h2>
+                <ul>
+                    <li><a href="">
                             <div class="cont_wrap">
                                 <div class="img_wrap">
-                                    <img src="./img/w01_600x1040_20220211103213.jpg" alt="">
+                                    <img src="./img/SI_20220107182615_eutxlf.jpg" alt="">
                                 </div>
-                                <div class="text_wrap">
-                                    <span>20% 세일</span>
-                                    <strong>TOP 20 ITEMS</strong>
-                                    <p>지금 가장 핫한 아이템 할인받기!</p>
-                                </div>
+                                <p>루에프르</p>
                             </div>
+                        </a></li>
+                    <li><a href="">
+                            <div class="cont_wrap">
+                                <div class="img_wrap">
+                                    <img src="./img/SI_20220107182615_eutxlf.jpg" alt="">
+                                </div>
+                                <p>루에프르</p>
+                            </div>
+                        </a></li>
+                    <li><a href="">
+                            <div class="cont_wrap">
+                                <div class="img_wrap">
+                                    <img src="./img/SI_20220107182615_eutxlf.jpg" alt="">
+                                </div>
+                                <p>루에프르</p>
+                            </div>
+                        </a></li>
+                    <li><a href="">
+                            <div class="cont_wrap">
+                                <div class="img_wrap">
+                                    <img src="./img/SI_20220107182615_eutxlf.jpg" alt="">
+                                </div>
+                                <p>루에프르</p>
+                            </div>
+                        </a></li>
+                    <li><a href="">
+                            <div class="cont_wrap">
+                                <div class="img_wrap">
+                                    <img src="./img/SI_20220107182615_eutxlf.jpg" alt="">
+                                </div>
+                                <p>루에프르</p>
+                            </div>
+                        </a></li>
+                    <li><a href="">
+                            <div class="cont_wrap">
+                                <div class="img_wrap">
+                                    <img src="./img/SI_20220107182615_eutxlf.jpg" alt="">
+                                </div>
+                                <p>루에프르</p>
+                            </div>
+                        </a></li>
+                    <li><a href="">
+                            <div class="cont_wrap">
+                                <div class="img_wrap">
+                                    <img src="./img/SI_20220107182615_eutxlf.jpg" alt="">
+                                </div>
+                                <p>루에프르</p>
+                            </div>
+                        </a></li>
+                    <li><a href="">
+                            <div class="cont_wrap">
+                                <div class="img_wrap">
+                                    <img src="./img/SI_20220107182615_eutxlf.jpg" alt="">
+                                </div>
+                                <p>루에프르</p>
+                            </div>
+                        </a></li>
+
+                </ul>
+            </div>
+            <div class="cate3">
+                <ul>
+                    <li><a href="">DESIGNER</a></li>
+                    <li><a href="">DESIGNER</a></li>
+                    <li><a href="">DESIGNER</a></li>
+                    <li><a href="">DESIGNER</a></li>
+                    <li><a href="">DESIGNER</a></li>
+                    <li><a href="">DESIGNER</a></li>
+                    <li><a href="">DESIGNER</a></li>
+
+                </ul>
+            </div>
+            <div class="banner">
+                <div class="img_wrap"><a href=""><img src="./img/1프론트로우_LNB배너_750x140 커밍쑨_20220211105547.jpg"
+                            alt=""><span class="blind">22SS New drama</span></a></div>
+                <div class="img_wrap"><a href=""><img src="./img/img_banner_member_benefit.png" alt=""><span
+                            class="blind">회원혜택</span></a></div>
+
+            </div>
+            <div class="sns">
+                <ul>
+                    <li>
+                        <a href="">
+                            FACEBOOK
                         </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            FACEBOOK
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            FACEBOOK
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="youtube">
+                            FACEBOOK
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="global_site">
+
+            </div>
+        </section>
+        <section class="sc_visual">
+            <div class="coupon_box">
+
+                <a href="">
+                    <img src="./img/M_마케팅_메인상단띠배너_750x88_20220113190602.jpg" alt="" class="top_banner">
+                </a>
+            </div>
+            <div class="main_banner">
+                <h2 class="blind">런칭&이벤트 배너</h2>
+                <div class="pages">
+                    <span class="now">1</span>
+                    <span class="slash">/</span>
+                    <span class="total">30</span>
+                </div>
+
+                <div class="swiper slide01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/w01_600x1040_20220211103213.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+                                        <span>20% 세일</span>
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/w01_600x1040_20220211103213.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+                                        <span>20% 세일</span>
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/w01_600x1040_20220211103213.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+                                        <span>20% 세일</span>
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/w01_600x1040_20220211103213.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+                                        <span>20% 세일</span>
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/w01_600x1040_20220211103213.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+                                        <span>20% 세일</span>
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
 
                     </div>
-
                 </div>
             </div>
-          </div>
-   
+
             <article class="sale">
                 <div class="inner">
                     <div class="cont_wrap">
@@ -91,128 +405,414 @@
                                     <p>주말 한정 특가 모아보기</p>
                                 </div>
                             </a>
-    
+
                         </div>
                         <div class="contents right">
                             <a href="">
                                 <div class="img_wrap"></div>
                                 <img src="./img/위캔드오프 mo_20220210143043.jpg" alt="">
-                               
+
                                 <div class="text_wrap">
                                     <strong>WEEKEND OFF</strong>
                                     <p>주말 한정 특가 모아보기</p>
                                 </div>
                             </a>
                         </div>
-                        </div>
                     </div>
                 </div>
-           
+                </div>
+
             </article>
         </section>
 
         <section class="new_arrival">
             <div class="inner">
                 <h2>PRE OPEN</h2>
-            <div class="swiper slide02">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="">
-                            <div class="cont_wrap">
-                                <div class="img_wrap">
-                                    <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
-                                </div>
-                                <div class="text_wrap">
-                                    
-                                    <strong>TOP 20 ITEMS</strong>
-                                    <p>지금 가장 핫한 아이템 할인받기!</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="">
-                            <div class="cont_wrap">
-                                <div class="img_wrap">
-                                    <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
-                                </div>
-                                <div class="text_wrap">
-                                    
-                                    <strong>TOP 20 ITEMS</strong>
-                                    <p>지금 가장 핫한 아이템 할인받기!</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    
-                </div>
-            </div>
-            <article class="new">
-                <h2>WHAT'S NEW</h2>
                 <div class="swiper slide02">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide sum">
-                            <div class="cont_wrap">
-                                <div class="txt_wrap">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="cont_wrap">
+                                    <div class="img_wrap">
+                                        <img src="./img/M4_relaysale_300x400_01_20220210183126.jpg" alt="">
+                                    </div>
+                                    <div class="text_wrap">
+
+                                        <strong>TOP 20 ITEMS</strong>
+                                        <p>지금 가장 핫한 아이템 할인받기!</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <article class="new">
+                    <h2>WHAT'S NEW</h2>
+                    <div class="swiper slide03">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide sum">
+
+                                <div class="text_wrap">
                                     <span>TODAY</span>
                                     <strong>663</strong>
                                     <a href=""><span>more..</span></a>
                                 </div>
+
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="cont_wrap">
-                                <img src="" alt="">
-                                <p>APPAREL</p>
+                            <div class="swiper-slide">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <img src="./img/img_new_product_w_01.png" alt="">
+                                        <p>APPAREL</p>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <img src="./img/img_new_product_w_01.png" alt="">
+                                        <p>APPAREL</p>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <img src="./img/img_new_product_w_01.png" alt="">
+                                        <p>APPAREL</p>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <img src="./img/img_new_product_w_01.png" alt="">
+                                        <p>APPAREL</p>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <img src="./img/img_new_product_w_01.png" alt="">
+                                        <p>APPAREL</p>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <img src="./img/img_new_product_w_01.png" alt="">
+                                        <p>APPAREL</p>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <img src="./img/img_new_product_w_01.png" alt="">
+                                        <p>APPAREL</p>
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
             </div>
-            
+
         </section>
         <section class="md_pick">
             <div class="inner">
                 <h2>MD'S PICK</h2>
-            <nav>
-                <div class="gnb">
-                    <div class="swiper nav">
+                <nav>
+                    <div class="swiper gnb">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                            <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                            <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                            <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                            <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                            <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                            <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                            <div class="swiper-slide"><a href="">SHOWINDOW</a></div>
-                        </div>
-            </nav>
-            <div class="swiper grid_slide">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="cont_wrap">
-                            <a href="">
-                                <div class="img_wrap">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="text_wrap">
-                                    <div class="info_text">
-                                        <strong>WEEKEND OFF</strong>
-                                        <p>주말 한정 특가 모아보기</p>
-                                    </div>
-                                    <p class="discount">5%</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                            <div class="swiper-slide"><a href="">BEST</a></div>
+                            <div class="swiper-slide"><a href="">SALE</a></div>
+                            <div class="swiper-slide"><a href="">APPAREL</a></div>
+                            <div class="swiper-slide"><a href="">BAG</a></div>
+                            <div class="swiper-slide"><a href="">SHOSE</a></div>
+                            <div class="swiper-slide"><a href="">ORIGINAL</a></div>
 
+
+                            </ul>
+                        </div>
+                </nav>
+                <div class="swiper grid_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items1">
+                                <div class="cont_wrap">
+                                    <a href="">
+                                        <div class="img_wrap">
+                                            <img src="./img/301604048.jpg" alt="">
+                                        </div>
+                                        <div class="text_wrap">
+                                            <div class="info_text">
+                                                <strong>WEEKEND OFF</strong>
+                                                <p>주말 한정 특가 모아보기</p>
+                                            </div>
+                                            <p class="discount">5%</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+
+                    </div>
                 </div>
-            </div>
-            
+
         </section>
 
     </main>
@@ -220,51 +820,65 @@
         <div class="menu">
             <div class="wrap">
                 <a href="">로그인</a>
-                <a href="">로그인</a>
-                <a href="">로그인</a>
-                <a href="">로그인</a>
+                <a href="">고객센터</a>
+                <a href="">PC 버전</a>
+                <a href="">APP다운</a>
             </div>
         </div>
         <div class="inner">
-            <div class="company_info">
-                <p>상호명 : (주)더블유컨셉코리아</p>
-                <p>대표자 : 이은철</p><br>
-                <p>대표자 : 이은철</p>
-                <p>대표자 : 이은철</p>
-                <p>대표자 : 이은철</p>
-                <p>대표자 : 이은철</p>
-                <p>대표자 : 이은철</p>
-                <p>대표자 : 이은철</p>
-                <p>대표자 : 이은철</p>
-                <p>대표자 : 이은철</p>
-            </div>
-            <div class="policy">
-                <div class="wrap">
-                    <a href="">로그인</a>
-                    <a href="">로그인</a>
-                    <a href="">로그인</a>
-                    <a href="">로그인</a>
+            <p class="company_info">
+                <p>상호명 : ㈜더블유컨셉코리아 | 대표자 : 이은철</p>
+                <p>서울특별시 강남구 테헤란로14길 16,5층 (역삼동 라인빌딩)</p>
+                <p>사업자등록번호 : 211-88-19183</p>
+                <p>통신판매업신고: 제2009호 - 서울강남-00847호<a href="">사업장정보확인</a></p>
+                <p>개인정보보호책임자 : 허선희 | 호스팅서비스 : ㈜더블유컨셉코리아</p>
+                <p>고객센터 :<a href="" class="tel">1566-5027</a> | 운영시간 : 평일 09:00~18:00 (점심시간 : 12:30~13:30) | <a
+                        href="mailto:cs_help@wconcept.co.kr" class="tel">cs_help@wconcept.co.kr</a></p>
+
+
+
+                <div class="policy">
+                    <div class="wrap">
+                        <a href="">회사소개</a>
+                        <a href="">이용약관</a>
+                        <a href="">개인정보처리방침</a>
+                        <a href="">제휴문의</a>
+                    </div>
+                </div>
+                <p class="copyright">COPYRIGHT ⓒ 2020 ㈜더블유컨셉코리아 ALL RIGHTS RESERVED.</p>
+        </div>
+        </div>
+        <div class="float_menu">
+            <div class="cont_wrap">
+                <ul class="icon">
+                    <li><a href=""><span class="blind">home</span><i></i></a></li>
+                    <li><a href=""><span class="blind">home</span><i></i></a></li>
+                    <li><a href=""><span class="blind">home</span><i></i></a></li>
+                    <li><a href=""><span class="blind">home</span><i></i></a></li>
+                </ul>
+                <div class="btn_men">
+                    <a href=""><img src="" alt=""></a>
                 </div>
             </div>
-            <p class="copyright"></p>
+            <div class="top_btn">
+                <a href=""><img src="" alt=""></a>
+            </div>
         </div>
-      <div class="float_menu">
-          <div class="cont_wrap">
-              <ul class="icon">
-                  <li><a href=""><span class="blind">home</span><i></i></a></li>
-                  <li><a href=""><span class="blind">home</span><i></i></a></li>
-                  <li><a href=""><span class="blind">home</span><i></i></a></li>
-                  <li><a href=""><span class="blind">home</span><i></i></a></li>
-              </ul>
-              <div class="btn_men">
-                  <a href=""><img src="" alt=""></a>
-              </div>
-          </div>
-          <div class="top_btn">
-              <a href=""><img src="" alt=""></a>
-          </div>
-      </div>
     </footer>
+
+    <script src="./js/index.js"></script>
+    <script>
+        const menu_btn = document.querySelector('.hidden_menu')
+        const close_btn = document.querySelector('.btn_close')
+        let menubar = document.querySelector('.menubar')
+
+        menu_btn.addEventListener("click", e => {
+           menubar.style.left='0'
+        });
+        close_btn.addEventListener("click", e => {
+           menubar.style.left='-100%'
+        });
+    </script>
 </body>
 
 </html>
