@@ -55,6 +55,7 @@ body.hidden{
     overflow: hidden;
 }
 header {
+  
     
     width: 100%;
     background-color: #fff;
@@ -99,46 +100,62 @@ header {
 
 .icon_area .icon {
     float: right;
+    position: relative;
 
 }
 
 .icon_area .icon a {
     float: left;
     width: 40px;
-    height: 50px;
+    height: px;
     margin-right: 10px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.icon_area .icon a:first-child {
+
+.icon_area .count{
+    position: absolute;
+    display: inline-block;
+    right: 27px;
+    top: 19px;
+    font-size: 11px;
+}
+.icon_area .icon .search {
     background-image: url(../img/btn_gnb_search_50.png);
 }
-.icon_area .icon a:last-child {
+.icon_area .icon .cart {
     background-image: url(../img/ico_gnb_bag_50.png);
     margin-right: 0;
 }
 
 header nav {
-    
+   
     width: 100%;  
     text-align: center;
     background: #fff;
     font-size: 11.375px;
     font-weight: bold;
     font-family: 'proxima',sans-serif;
-    
-}
-header.gnb{
 
-height: 39px;
     
 }
+header nav{
+   width: 100%;
+}
+header .gnb{
+height: 39px;
+margin: 0 auto;
+}
+
 header .gnb .swiper-wrapper{
 padding: 0  16.25px;
+box-sizing: border-box;
+
 }
 
 header .gnb .swiper-wrapper .swiper-slide {
+    float: left;
     width:auto;
     padding: 0 8.9px;       
 }
@@ -147,7 +164,7 @@ padding-left: 0;
 }
 
 nav .gnb .swiper-slide a {
-    line-height: 48px;  
+    line-height: 39px;  
    
 }
 .menubar {
@@ -325,9 +342,12 @@ nav .gnb .swiper-slide a {
     overflow: hidden;
     margin-bottom: 12px;
     display: none;
+    
+   
 }
 .category .cate1 ul li .sub_list.on {
- display: block;}
+ display: block;
+}
 
 .category .cate1 li .sub_list .detail {
     display: flex;
@@ -594,7 +614,7 @@ height: 100%;
 line-height: 3;
 margin-left: 15px;
 font-size: 11.375px;
-font-weight: bold;}
+font-weight: 400;}
 footer .menu .wrap a::after
 {
     content: "";
@@ -652,38 +672,49 @@ footer .inner .policy a::after{
 }
 
 .float_menu{
-    width: 100%;
-   
+    width: 100%;   
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 1;
+    
+  
 }
 .float_menu .cont_wrap{
-    width: 100%;
-    height: 40px;
+width: 65%;
+background: white;
+height: 40px;
+}
+.float_menu .cont_wrap .float_bg{
+ width: 35%;   
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 40px;   
     background-image: url('../img/menubar.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    text-align: center;
+   
 }
-
-.float_menu .cont_wrap .icon{
-    padding-left: 10px;
-   width: 85%;
+.float_menu .icon{
+   z-index: 1; 
+   width:80%;   
     overflow: hidden;
     height: 50px;
+    position: absolute;
+    left: 0;
+
     
+  
 }
 .float_menu .cont_wrap .icon li{
-   
+    text-align: center;
     float: left;
     height: 50px;
     width: 25%;
 }
 .float_menu .cont_wrap .icon li a {
-    display: block;
+    display: inline-block;
     height: 100%;
   
     
@@ -691,8 +722,10 @@ footer .inner .policy a::after{
 }
 .float_menu .cont_wrap .icon li a i{
     display:inline-block;
-    height: 50px;
-    width: 50px;
+    padding-bottom: 5px;
+    height: 35px;
+    width: 35px;
+    margin: auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -709,12 +742,12 @@ footer .inner .policy a::after{
 .float_menu .cont_wrap .icon li:last-child a i{
   background-image: url(../img/my.png);
 }
-.float_menu .cont_wrap .btn_men{
-    width: 60px;
-    height: 60px;
+.float_menu .btn_men{
+    width: 50px;
+    height: 50px;
     position: absolute;
-    right: 5%;
-    bottom: 50%;
+    right:2.5%;
+    bottom:20%;
 }
 .float_menu .cont_wrap .btn_men a{
     display: block;
@@ -734,8 +767,9 @@ footer .inner .policy a::after{
     width: 40px;
     height: 40px;
     position: absolute;
-    right: 5%;
-    bottom: 100px;
+    right: 1.8%;
+    bottom: 80px;
+   
 }
 .float_menu .top_btn i{
     display: block;
@@ -744,4 +778,5 @@ footer .inner .policy a::after{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
