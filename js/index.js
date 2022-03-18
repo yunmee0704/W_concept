@@ -1,26 +1,40 @@
 $(function () {
   
-  $('.list>li .sub_list').slideUp();
+ 
+
+
+  $('.sub_list').slideUp()
+  
+
 
 function stagger() { //함수로 만듬
-  
-    $('.brand_slide.on .swiper-slide-active .list>li').each(function (index, item) { // 각각 실행
-        setTimeout(function () { 
-            $('.brand_slide.on .swiper-slide-active .list>li').eq(index).find('.sub_list').slideDown(500).delay(1000).slideUp(500);
-             //총모션 2초
-        }, 2000 * index) //2초*순서 뒤에 실행해서 순차실행
-       
-      
-    })
+  let current=$('.brand_slide.on .swiper-slide-active .list>li')
+    let slide_acitve=$('.brand_slide.on .swiper-slide-active')
     
+    $(slide_acitve).toggleClass('on')
+ 
+    $(current).each(function (index, item) {
+ // 각각 실행
+ if($(slide_acitve).hasClass('on')){
+        setTimeout(function () { 
+            console.log(index)          
+            $(current).eq(index).find('.sub_list').slideDown(500).delay(1000).slideUp(500);
+       
+        }, 2000 * index) //2초*순서 뒤에 실행해서 순차실행
+        
+    }else{stop(stagger)}
+    })
+  
+   
+   
 };
-// stagger();
+stagger();
 
 
 //   setInterval(function () {
 //     stagger();
    
-// }, 10000) //3개니 6초
+// }, 20000) //3개니 6초
 
  //ranking 영역 버튼
  $('.sc_ranking .tap_wrap > div').click(function(e){
@@ -307,21 +321,27 @@ $('.special_product ul li').click(function(e){
   }
 })
 $(window).scroll(function(){
-  let scrT= $(window).scrollTop();
-  console.log(scrT);
+  let scrT=
+  Math.floor(($(window).scrollTop() / 
+	($(document).height() - $(window).height())
+    ) * 100);
+ console.log(scrT)
   if(scrT>0){
     $('header').css({top:'-50px'})
     $('.float_menu').css({bottom:'-90px'})
+   
 
    
   }else{
     
     $('header').css({top:'0'})
     $('.float_menu').css({bottom:'0'})
+    $('.float_menu').css({display:"block"})
   }
     
-  if(scrT > 14000){
+  if(scrT > 99){
     $('.float_menu').css({bottom:'0'})
+    $('.float_menu').css({display:"block"})
   }  
     
   
