@@ -1,58 +1,5 @@
 $(function () {
-  
- 
-
-
-  $('.sub_list').slideUp()
-  
-
-
-function stagger() { //함수로 만듬
-  let current=$('.brand_slide.on .swiper-slide-active .list>li')
-    let slide_acitve=$('.brand_slide.on .swiper-slide-active')
-    
-    $(slide_acitve).toggleClass('on')
- 
-    $(current).each(function (index, item) {
- // 각각 실행
- if($(slide_acitve).hasClass('on')){
-        setTimeout(function () { 
-            console.log(index)          
-            $(current).eq(index).find('.sub_list').slideDown(500).delay(1000).slideUp(500);
-       
-        }, 2000 * index) //2초*순서 뒤에 실행해서 순차실행
-        
-    }else{stop(stagger)}
-    })
-  
-   
-   
-};
-stagger();
-
-
-//   setInterval(function () {
-//     stagger();
-   
-// }, 20000) //3개니 6초
-
- //ranking 영역 버튼
- $('.sc_ranking .tap_wrap > div').click(function(e){
-  e.preventDefault();
-  $(this).addClass('on').siblings().removeClass('on');
-  target = $(this).attr('href');
-    $(target).addClass('on').siblings().removeClass('on')
-    setInterval(function () {
-      stagger();
-     
-  }, 10000)
-
-})
-
-
-
-
-
+//hearder gnb
   let gnb = new Swiper("header .gnb", {
     slidesPerView: "auto",
     freeMode: true,
@@ -191,7 +138,49 @@ stagger();
 
 
 
-
+  $('.sub_list').slideUp()
+  function stagger() { //함수로 만듬
+    let current=$('.brand_slide.on .swiper-slide-active .list>li')
+      let slide_acitve=$('.brand_slide.on .swiper-slide-active')
+      
+      $(slide_acitve).toggleClass('on')
+   
+      $(current).each(function (index, item) {
+   // 각각 실행
+   if($(slide_acitve).hasClass('on')){
+          setTimeout(function () { 
+              console.log(index)          
+              $(current).eq(index).find('.sub_list').slideDown(500).delay(1000).slideUp(500);
+         
+          }, 2000 * index) //2초*순서 뒤에 실행해서 순차실행
+          
+      }else{stop(stagger)}
+      })
+    
+     
+     
+  };
+  // stagger();
+  
+  
+    setInterval(function () {
+      stagger();
+     
+  }, 20000) 
+  
+   //ranking 영역 버튼
+   $('.sc_ranking .tap_wrap > div').click(function(e){
+    e.preventDefault();
+    $(this).addClass('on').siblings().removeClass('on');
+    target = $(this).attr('href');
+      $(target).addClass('on').siblings().removeClass('on')
+      setInterval(function () {
+        stagger();
+       
+    }, 10000)
+  
+  })
+  
 
 
 
